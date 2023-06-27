@@ -5,10 +5,16 @@ export default function Home() {
   return (
     <div className="w-100 mt-4">
       <p>Your favourites </p>
-      <Favourite />
+      <div className="d-flex flex-wrap">
+        <Favourite />
+      </div>
       <hr className="w-100" />
-      <p>Your playlist</p>
-      <PlayList />
+      <div>
+        <p>Your playlist</p>
+        <div className="d-flex flex-wrap">
+          <PlayList />
+        </div>
+      </div>
     </div>
   )
 }
